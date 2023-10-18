@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Выбор смены</title>
+</head>
+
+<body>
+
+    <div>
+        <label>Город:</label>
+        <select id="citySelect">
+            <option value="Москва">Москва</option>
+            <option value="Санкт-Петербург">Санкт-Петербург</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Цех:</label>
+        <select id="departmentSelect"></select>
+    </div>
+
+    <div>
+        <label>Сотрудник:</label>
+        <select id="employeeSelect"></select>
+    </div>
+
+    <div>
+        <label>Бригада:</label>
+        <div id="shiftRadio">
+            <input type="radio" name="shift" value="Первая" checked> Первая (8:00 - 20:00)<br>
+            <input type="radio" name="shift" value="Вторая"> Вторая (20:00 - 8:00)
+        </div>
+    </div>
+
+    <div>
+        <label>Смена:</label>
+        <select id="shiftSelect">
+            <option value="смена1">Смена 1</option>
+            <option value="смена2">Смена 2</option>
+        </select>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
